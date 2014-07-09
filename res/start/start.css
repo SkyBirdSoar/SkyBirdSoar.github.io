@@ -1,0 +1,9 @@
+#names {
+  margin-top: 10px;
+}
+
+.name {
+  display: inline-block;
+  width: 24.7%;
+  height: 100%;
+}

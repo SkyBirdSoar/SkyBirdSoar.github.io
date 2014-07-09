@@ -1,0 +1,11 @@
+Website
+http://stackoverflow.com/questions/5362750/css-stretching-image-to-100-width
+http://stackoverflow.com/questions/6012823/how-to-make-html-table-cell-editable
+http://www.w3.org/Style/Examples/007/center.en.html
+http://www.latofonts.com
+http://www.w3schools.com/jquery/
+http://stackoverflow.com/questions/9913293/change-text-on-hover-then-return-to-the-previous-text
+http://api.jquery.com/child-selector/
+http://www.new2html.com/website-creation/20/using-simple-javascript-to-change-text-on-hover
+http://csscreator.com/node/33023
+http://micronations.wikia.com/wiki/File:Laurel_wreath.gif

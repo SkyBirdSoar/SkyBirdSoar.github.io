@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Math PW Research :: Select Your Name</title>
+    <link rel="stylesheet" type="text/css" href="/res/common/nav.css">
+    <link rel="stylesheet" type="text/css" href="select_name/select_name.css">
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+    <script type='text/javascript' src='/res/common/nav.js'></script>
+    <script type="text/javascript">
+      //<![CDATA[      
+      $(document).ready(function(){
+        $("#names > a").hover(
+          function(event) {
+            var selected = $(this);
+            text = selected.text();
+            text = "> " + text + " <";
+            selected.text(text);
+          }, function(event) {
+            var selected = $(this);
+            text = selected.text();
+            text = text.replace("> ", "").replace(" <", "");
+            selected.text(text);
+          }
+        );
+     });
+      //]]>
+    </script>
+  </head>
+  <body>
+    <div id="navWrap">
+      <div id="nav">
+        <a href="/"><img id="logo" src="/res/images/logo.png" alt="logo" /></a>
+        <table>
+          <tr>
+            <td>Reserved</td>
+            <td>Reserved</td>
+            <td>Reserved</td>
+            <td>Reserved</td>
+          </tr>
+        </table>
+        <br class="clearLeft" />
+      </div>
+    </div>
+    
+    <img id="select_name" src="/res/images/select_name.png" alt="Select Your Name" />
+    <div id="names">
+      <a href="">Bryan</a>
+      <a href="">Jing Yang</a>
+      <a href="">Rocky</a>
+      <a href="">Jun Boon</a>
+    </div>
+  </body>
+</html>

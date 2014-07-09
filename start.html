@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Math PW Research :: Select Your Name</title>
+    <link rel="stylesheet" type="text/css" href="res/common/nav.css">
+    <link rel="stylesheet" type="text/css" href="res/start/start.css">
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+    <script type='text/javascript' src='res/common/nav.js'></script>
+    <script type="text/javascript">
+      //<![CDATA[      
+      $(document).ready(function(){
+        $("#names > a > img").hover(function(e){
+          var selected = $(this);
+          hover_img = selected.attr("src").replace(".png", "_selected.png");
+          selected.attr("src", hover_img);
+        }, function(e){
+          var selected = $(this);
+          original = selected.attr("src").replace("_selected", "");
+          selected.attr("src", original);
+        }
+        );
+      });
+      //]]>
+    </script>
+  </head>
+  <body>
+    <div id="navWrap">
+      <div id="nav">
+        <a href="/"><img id="logo" src="res/images/logo.png" alt="logo" /></a>
+        <table>
+          <tr>
+            <td>Reserved</td>
+            <td>Reserved</td>
+            <td>Reserved</td>
+            <td>Reserved</td>
+          </tr>
+        </table>
+        <br class="clearLeft" />
+      </div>
+    </div>
+      <div id="names">
+        <a href=""><img class="name" src="res/images/bryan.png" alt="bryan" /></a>
+        <a href=""><img class="name" src="res/images/jing_yang.png" alt="jing_yang" /></a>
+        <a href=""><img class="name" src="res/images/rocky.png" alt="rocky" /></a>
+        <a href=""><img class="name" src="res/images/jun_boon.png" alt="jun_boon" /></a>
+    </div>
+  </body>
+</html>

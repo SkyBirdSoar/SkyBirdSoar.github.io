@@ -1,0 +1,25 @@
+#select_name {
+  display: block;
+  margin: 10px auto 0 auto;
+}
+
+#names {
+  margin-top: 10px;
+  text-align: center;
+  font-family: Lato;
+  src: url(res/fonts/Lato-Thin.ttf);
+}
+
+#names a {
+  display: inline-block;
+  width: 100px;
+  border: solid 2px #d3cece;
+  margin-right: 2px;
+  text-decoration: none;
+}
+
+#names a:hover {
+  background-color: #d1f0f8;
+  text-decoration: underline;
+  color: #faa;
+}
