@@ -12,7 +12,7 @@ var urlParams;
 })();
 
 if (urlParams["token"] == null) {
-  alert("Error: No token");
+  alert("Error: No token. Click ok to continue anyways.");
 } else {
   var client = new Dropbox.Client({key: "xjnqbt5axzmwl9e", token: urlParams["token"]});
 
