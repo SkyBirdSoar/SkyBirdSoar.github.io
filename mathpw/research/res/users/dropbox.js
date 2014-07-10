@@ -25,5 +25,7 @@ if (urlParams["token"] == null) {
 }
 
 $(document).ready(function() {
-  
+  $.get("tasks.html", function(data) {
+    $("#tasks").html(data);
+  });
 });

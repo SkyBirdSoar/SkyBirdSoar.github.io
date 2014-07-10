@@ -12,3 +12,8 @@
   font-family: "Lato Light";
   src: url(/mathpw/research/res/fonts/Lato-Light.ttf);
 }
+
+@font-face {
+  font-family: "Vollkorn Italic";
+  src: url(/mathpw/research/res/fonts/Vollkorn-Italic.ttf);
+}

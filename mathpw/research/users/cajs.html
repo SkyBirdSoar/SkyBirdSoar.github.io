@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Math PW Research :: Jun Boon</title>
+    <title>Math PW Research :: Cajs</title>
     <link rel="stylesheet" type="text/css" href="/mathpw/research/res/common/nav.css">
     <link rel="stylesheet" type="text/css" href="/mathpw/research/res/start/start.css">
     <link rel="stylesheet" type="text/css" href="/mathpw/research/res/users/user.css">
@@ -24,7 +24,7 @@
     </div>
     <div id="background">
       <div id="docStart">
-        <p id="name">Jun Boon</p>
+        <p id="name">Cajs</p>
         <div id="tasks">
           <p id="error">Uh oh! Something went wrong!</p>
         </div>
@@ -32,7 +32,12 @@
     </div>
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script type='text/javascript' src='/mathpw/research/res/common/nav.js'></script>
-    <script type="text/javascript" src="https://www.dropbox.com/static/api/dropbox-datastores-1.1-latest.js"></script>
-    <script type='text/javascript' src="/mathpw/research/res/users/dropbox.js"></script>
+    <script type='text/javascript'>
+      $(document).ready(function() {
+        $.get("tasks.html", function(data) {
+          $("#tasks").html(data);
+        });
+      });
+    </script>
   </body>
 </html>
