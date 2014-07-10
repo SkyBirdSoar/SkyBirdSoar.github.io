@@ -5,24 +5,6 @@
     <link rel="stylesheet" type="text/css" href="/mathpw/research/res/common/nav.css">
     <link rel="stylesheet" type="text/css" href="/mathpw/research/res/start/start.css">
     <link rel="stylesheet" type="text/css" href="/mathpw/research/res/common/font.css">
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-    <script type='text/javascript' src='/mathpw/research/res/common/nav.js'></script>
-    <script type="text/javascript">
-      //<![CDATA[      
-      $(document).ready(function(){
-        $("#names > a > img").hover(function(e){
-          var selected = $(this);
-          hover_img = selected.attr("src").replace(".png", "_selected.png");
-          selected.attr("src", hover_img);
-        }, function(e){
-          var selected = $(this);
-          original = selected.attr("src").replace("_selected", "");
-          selected.attr("src", original);
-        }
-        );
-      });
-      //]]>
-    </script>
   </head>
   <body>
     <div id="navWrap">
@@ -45,5 +27,24 @@
         <a href="/mathpw/research/users/rocky.html"><img class="name" src="/mathpw/research/res/images/rocky.png" alt="rocky" /></a>
         <a href="/mathpw/research/users/jun_boon.html"><img class="name" src="/mathpw/research/res/images/jun_boon.png" alt="jun_boon" /></a>
     </div>
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type='text/javascript' src='/mathpw/research/res/common/nav.js'></script>
+    <script type="text/javascript">
+      //<![CDATA[      
+      $(document).ready(function(){
+        $("#names > a > img").hover(function(e){
+          var selected = $(this);
+          hover_img = selected.attr("src").replace(".png", "_selected.png");
+          selected.attr("src", hover_img);
+        }, function(e){
+          var selected = $(this);
+          original = selected.attr("src").replace("_selected", "");
+          selected.attr("src", original);
+        }
+        );
+      });
+      //]]>
+    </script>
   </body>
 </html>

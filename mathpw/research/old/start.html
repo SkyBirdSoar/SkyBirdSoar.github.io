@@ -5,27 +5,6 @@
     <link rel="stylesheet" type="text/css" href="/mathpw/research/res/common/nav.css">
     <link rel="stylesheet" type="text/css" href="select_name/select_name.css">
     <link rel="stylesheet" type="text/css" href="/mathpw/research/res/common/font.css">
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-    <script type='text/javascript' src='/mathpw/research/res/common/nav.js'></script>
-    <script type="text/javascript">
-      //<![CDATA[      
-      $(document).ready(function(){
-        $("#names > a").hover(
-          function(event) {
-            var selected = $(this);
-            text = selected.text();
-            text = "> " + text + " <";
-            selected.text(text);
-          }, function(event) {
-            var selected = $(this);
-            text = selected.text();
-            text = text.replace("> ", "").replace(" <", "");
-            selected.text(text);
-          }
-        );
-     });
-      //]]>
-    </script>
   </head>
   <body>
     <div id="navWrap">
@@ -50,5 +29,27 @@
       <a href="/mathpw/research/users/rocky.html">Rocky</a>
       <a href="/mathpw/research/users/jun_boon.html">Jun Boon</a>
     </div>
+    
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type='text/javascript' src='/mathpw/research/res/common/nav.js'></script>
+    <script type="text/javascript">
+      //<![CDATA[      
+      $(document).ready(function(){
+        $("#names > a").hover(
+          function(event) {
+            var selected = $(this);
+            text = selected.text();
+            text = "> " + text + " <";
+            selected.text(text);
+          }, function(event) {
+            var selected = $(this);
+            text = selected.text();
+            text = text.replace("> ", "").replace(" <", "");
+            selected.text(text);
+          }
+        );
+     });
+      //]]>
+    </script>
   </body>
 </html>
