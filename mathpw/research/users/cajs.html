@@ -6,6 +6,30 @@
     <link rel="stylesheet" type="text/css" href="/mathpw/research/res/start/start.css">
     <link rel="stylesheet" type="text/css" href="/mathpw/research/res/users/user.css">
     <link rel="stylesheet" type="text/css" href="/mathpw/research/res/common/font.css">
+    <style>
+      body {
+        background-image: url(/mathpw/research/res/images/cajs.png);
+      }
+      #heart {
+        margin: 50px;
+        font-size: 100px;
+        color: black;
+        text-align: center;
+
+        text-decoration: none;
+        text-shadow: none;
+        -webkit-transition: 500ms linear 0s;
+        -moz-transition: 500ms linear 0s;
+        -o-transition: 500ms linear 0s;
+        transition: 500ms linear 0s;
+        outline: 0 none;
+      }
+
+      #heart:hover {
+        color: red;
+        text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+      }
+    </style>
   </head>
   <body>
     <div id="navWrap">
@@ -26,18 +50,11 @@
       <div id="docStart">
         <p id="name">Cajs</p>
         <div id="tasks">
-          <p id="error">Uh oh! Something went wrong!</p>
+          <p id="heart"><3</p>
         </div>
       </div>
     </div>
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script type='text/javascript' src='/mathpw/research/res/common/nav.js'></script>
-    <script type='text/javascript'>
-      $(document).ready(function() {
-        $.get("tasks.html", function(data) {
-          $("#tasks").html(data);
-        });
-      });
-    </script>
   </body>
 </html>
