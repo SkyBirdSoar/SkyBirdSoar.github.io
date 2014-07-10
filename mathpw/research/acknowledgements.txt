@@ -15,3 +15,4 @@ https://www.dropbox.com/developers/datastore/tutorial/js
 http://www.sitepoint.com/css3-glowing-link-effect/  *** VERY GOOD ***
 http://css-tricks.com/frosting-glass-css-filters/
 http://www.w3schools.com/cssref/css3_pr_font-face_rule.asp
+http://www.w3schools.com/cssref/css3_pr_box-shadow.asp
