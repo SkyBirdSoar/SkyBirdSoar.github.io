@@ -1,0 +1,35 @@
+body {
+  background-image: url(/mathpw/research/res/images/name_logo.png);
+  background-size: 50%;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#background {
+  display: block;
+  width: 75%;
+  height: 100%;
+  margin: -30px auto 0 auto;
+  background-color: #6a6a6a;
+  opacity: 0.8;
+}
+
+#name {
+  font-family: "Lato Thin";
+  font-size: 50px;
+  color: black;
+  text-align: center;
+
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 500ms linear 0s;
+  -o-transition: 500ms linear 0s;
+  transition: 500ms linear 0s;
+  outline: 0 none;
+}
+
+#name:hover {
+  color: skyblue;
+  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+}
