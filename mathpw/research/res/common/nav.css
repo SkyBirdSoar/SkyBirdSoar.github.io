@@ -26,13 +26,22 @@
   height: auto;
   width: 150px;
   text-align: center;
+  margin: -3px 0 0 0;
 }
 
 #nav td:hover {
-  color: red;
-  text-decoration: underline;   
+  background-color: #d1f0f8;
+  text-decoration: underline;
+  color: #faa;  
 }
 
-a {
+#nav a {
+  display: inline-block;
+  width: 150px;
+  line-height: 34px;
   text-decoration: none;
+}
+
+#nav a:hover {
+  color: #faa;
 }
