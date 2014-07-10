@@ -44,4 +44,5 @@
 
 #nav a:hover {
   color: #faa;
+  text-decoration: underline;
 }
