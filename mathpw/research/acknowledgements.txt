@@ -1,18 +1,21 @@
 Website
-http://stackoverflow.com/questions/5362750/css-stretching-image-to-100-width
-http://stackoverflow.com/questions/6012823/how-to-make-html-table-cell-editable
+** stackoverflow.com Q&As
+** jquery.com documentation
+** w3schools.com documentation
+** dropbox.com/developers documentation
+** developer.mozilla.org
 http://www.w3.org/Style/Examples/007/center.en.html
 http://www.latofonts.com
-http://www.w3schools.com/jquery/
-http://stackoverflow.com/questions/9913293/change-text-on-hover-then-return-to-the-previous-text
-http://api.jquery.com/child-selector/
 http://www.new2html.com/website-creation/20/using-simple-javascript-to-change-text-on-hover
 http://csscreator.com/node/33023
 http://micronations.wikia.com/wiki/File:Laurel_wreath.gif
-http://stackoverflow.com/questions/7117073/how-to-add-a-tooltip-to-a-div
-http://stackoverflow.com/a/2880929
 https://www.dropbox.com/developers/datastore/tutorial/js
 http://www.sitepoint.com/css3-glowing-link-effect/  *** VERY GOOD ***
 http://css-tricks.com/frosting-glass-css-filters/
-http://www.w3schools.com/cssref/css3_pr_font-face_rule.asp
-http://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+http://jslint.com
+http://jshint.com
+http://css.maxdesign.com.au/selectutorial/selectors_class.htm
+http://www.vanseodesign.com/css/css-specificity-inheritance-cascaade/
+https://github.com/CodeSeven/toastr *** VERY GOOD ***
+http://jscompress.com
+http://jspretty.com

@@ -2,14 +2,31 @@
 <html>
   <head>
     <title>Math PW Research :: Jing Yang</title>
-    <link rel="stylesheet" type="text/css" href="/mathpw/research/res/common/nav.css">
+
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    
+    <link rel="stylesheet" type="text/css" href="/res/common/font.css">
+    <link rel="stylesheet" type="text/css" href="/res/common/nav.css">
+    <style>
+      #nav {
+        background-image: url(/mathpw/research/res/images/nav.png);
+      }
+    </style>
+
     <link rel="stylesheet" type="text/css" href="/mathpw/research/res/users/user.css">
-    <link rel="stylesheet" type="text/css" href="/mathpw/research/res/common/font.css">
+    <script type='text/javascript' src='/mathpw/research/res/common/redirect.js'></script>
+    <script type='text/javascript' src='/mathpw/research/res/common/settings.js'></script>
+    
+    <link rel="stylesheet" type="text/css" href="/res/common/toastr.css" />
+    <script type="text/javascript" src="/res/common/toastr.js" />
+    <script type="application/javascript">
+      toastr(); // init
+    </script>
   </head>
   <body>
     <div id="navWrap">
       <div id="nav">
-        <!-- logo js -->
+        <a href="/mathpw/research/"><img id="logo" src="/mathpw/research/res/images/logo.png" /></a>
         <table>
           <tr>
             <td><a href="/mathpw/research/index.html">Home</a></td>
@@ -29,9 +46,13 @@
         </div>
       </div>
     </div>
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-    <script type='text/javascript' src='/mathpw/research/res/common/nav.js'></script>
+    <script type='text/javascript' src='/res/common/nav.js'></script>
     <script type="text/javascript" src="https://www.dropbox.com/static/api/dropbox-datastores-1.1-latest.js"></script>
     <script type='text/javascript' src="/mathpw/research/res/users/dropbox.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        toastr.info('Have you tried hovering over your name yet?');
+      });
+    </script>
   </body>
 </html>

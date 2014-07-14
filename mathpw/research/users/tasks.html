@@ -1,2 +1,73 @@
+<script type="text/javascript" src="/mathpw/research/res/users/forms.js"></script>
+
+<style>
+  textarea {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+</style>
 <p class="heading">Your Task</p>
-<p>Say hi to Sky.</p>
+<p>Fill in the below text boxes with promotional ideas</p>
+<form id="promotions" action="invalid.html">
+  <textarea></textarea>
+  <textarea></textarea>
+  <textarea></textarea>
+  <div class="button_group">
+    <input id="submit_promo" type="submit" value="Save">
+    <input id="add_promo" type="button" value="Add">
+    <input id="rem_promo" type="button" value="Remove">
+  </div>
+</form>
+<p class="heading">Gift Boxes Price Reseach</p>
+<p>Fill in the table below. If the gift box is discounted, try to find the original price of the gift box.<br>
+Purpose: To make sure the prices of our giftboxes are reasonable and within market price.
+</p>
+<div id="giftboxWrap">
+  <table id="giftbox">
+    <tr class="table_heading">
+      <td><b>Website</b></td>
+      <td><b>Remarks</b></td>
+      <td><b>Price ($)</b></td>
+      <td><b>Quantity</b></td>
+    </tr>
+    <tr contenteditable="true">
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr contenteditable="true">
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr contenteditable="true">
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr contenteditable="true">
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr contenteditable="true">
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+  <div class="button_group">
+    <button type="button" id="submit_giftbox">Save</button>
+    <button type="button" id="add_giftbox">Add</button>
+    <button type="button" id="rem_giftbox">Remove</button>
+  </div>
+</div>
+<p class="heading">Export to JSON</p>
+<p>Only use this option if you can't save.</p>
+<button type="button"><a href="#" id="export">Export</a></button>

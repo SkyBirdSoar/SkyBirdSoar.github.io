@@ -6,7 +6,6 @@ body {
 }
 
 #background {
-  display: block;
   width: 75%;
   height: 100%;
   margin: -30px auto 0 auto;
@@ -43,10 +42,11 @@ body {
 
 #tasks p {
   font-family: "Vollkorn Italic";
+  color: white;
   margin: 0 0 0 0;
 }
 
-.heading {
+#tasks p.heading {
   font-size: 30px;
   color: black;
 
@@ -59,7 +59,82 @@ body {
   outline: 0 none;
 }
 
-.heading:hover {
+#tasks p.heading:hover {
   color: skyblue;
   text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+}
+
+p#error {
+  text-decoration: underline;
+  color: red;
+  background-color: yellow;
+  text-align: center;
+}
+
+#tasks table {
+  border: 2px solid white;
+  border-collapse: collapse;
+  border-color: #888888;
+  width: 100%;
+  margin-bottom: 10px;
+  table-layout: fixed;
+}
+
+#tasks table tr {
+  height: 30px;
+  border: 2px solid #877fea;
+  font-family: "Vollkorn Italic";
+  font-size: 15px;
+}
+
+#tasks table tr:nth-child(odd) {
+  background-color: #bed9eb;
+}
+
+#tasks table tr:nth-child(even) {
+  background-color: #c2eaff;
+}
+
+#tasks table tr.table_heading {
+  background-color: #3e94e6;
+}
+
+#tasks table td {
+  height: 18px;
+  border: inherit;
+  text-align: center;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+#tasks table td:nth-child(1) {
+  width: 40%;
+}
+
+#tasks table td:nth-child(2) {
+  width: 40%;
+}
+
+#tasks table td:nth-child(3) {
+  width: 10%;
+}
+
+#tasks table td:nth-child(4) {
+  width: 10%;
+}
+
+.button_group {
+  float: right;
+}
+
+button {
+  width: 100px;
+}
+
+input[type=button] {
+  width: 100px;
+}
+
+input[type=submit] {
+  width: 100px;
 }

@@ -1,0 +1,1 @@
+$(function(){var e=$("#nav");var t=e.offset().top;var n=false;var r=$(window);r.scroll(function(){var i=r.scrollTop();var s=i>t;if(s&&!n){e.css({position:"fixed",top:0,left:e.offset().left,width:e.width()});n=true}else if(!s&&n){e.css({position:"static"});n=false}})})
