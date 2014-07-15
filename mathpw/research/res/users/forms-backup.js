@@ -60,6 +60,7 @@ var readTableRow = function(tr) {
   var dict = {};
   tr.children().each(function(i, child) {
     var text = child.innerHTML;
+    text.replace(/<[^>]*>?/g, '');
     switch (i) {
       case 0:
         dict.website = text;
