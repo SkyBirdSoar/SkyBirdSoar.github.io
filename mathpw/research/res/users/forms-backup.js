@@ -132,10 +132,10 @@ var giftboxInit = function(giftboxes) {
   trs.shift();
 
   $.each(giftboxes, function(i, record) {
-    var a = "<td contenteditable=\"true\">" + record.get("website") + "</td>";
-    var b = "<td contenteditable=\"true\">" + record.get("remarks") + "</td>";
-    var c = "<td contenteditable=\"true\">" + record.get("price") + "</td>";
-    var d = "<td contenteditable=\"true\">" + record.get("quantity") + "</td>";
+    var a = "<td contenteditable=\"true\">" + record.get("website").replace(/<[^>]*>?/g, '') + "</td>";
+    var b = "<td contenteditable=\"true\">" + record.get("remarks").replace(/<[^>]*>?/g, '') + "</td>";
+    var c = "<td contenteditable=\"true\">" + record.get("price").replace(/<[^>]*>?/g, '') + "</td>";
+    var d = "<td contenteditable=\"true\">" + record.get("quantity").replace(/<[^>]*>?/g, '') + "</td>";
     if (trs.length >= i) {
       $(trs[i]).html(a + b + c + d);
     }
