@@ -1,0 +1,57 @@
+body {
+  font-family: 'Vollkorn Italic';
+}
+
+form span.field_name {
+  display: inline-block;
+  width: 70px;
+}
+
+#form {
+  display: block;
+  background-color: #d6d6d6;
+  border: 2px solid #000;
+  padding-left: 5px;
+}
+
+#form select {
+  width: 210px;
+}
+
+#form input[type=number] {
+  width: 210px;
+}
+
+#title {
+  font-family: "Lato Thin";
+  font-size: 50px;
+  color: black;
+  text-align: center;
+  margin: -8px 0 0 0;
+
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 500ms linear 0s;
+  -o-transition: 500ms linear 0s;
+  transition: 500ms linear 0s;
+  outline: 0 none;
+}
+
+#title:hover {
+  color: skyblue;
+  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+}
+
+#result {
+  font-family: monospace;
+  margin: 5px 5px 0 0;
+  text-align: justify;
+  border: 2px dashed #000;
+}
+
+#error:hover {
+  text-decoration: underline;
+  color: red;
+  background-color: yellow;
+}

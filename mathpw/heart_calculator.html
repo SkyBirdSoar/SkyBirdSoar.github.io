@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Heart Calculator</title>
+    <link rel="stylesheet" type="text/css" href="/res/common/nav.css">
+    <link rel="stylesheet" type="text/css" href="/mathpw/heart_calculator.css">
+    <style>
+      #nav {
+        background-image: url(/mathpw/research/res/images/nav.png);
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href="/res/common/font.css">
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type='text/javascript' src='/mathpw/form.js'></script>
+    <script type='text/javascript' src='/mathpw/inject_nav.js'></script>
+  </head>
+  <body>
+    <div id="navWrap">
+    </div>
+    <p id="title">Heart Calculator</p>
+    <div id="content">
+      <form id="form" action="">
+        <span class="field_name">Paper size:</span>
+        <select id="paperSize">
+          <option value="A4">A4</option>
+          <option value="Bigger">Bigger (36 cm by 50.5 ~ 51 cm)</option>
+        </select><br>
+        <span class="field_name">Material:</span> <div id="material">
+        <input type="radio" name="paper" value="U-GRADE Stardream Metalic">U-GRADE Stardream Metalic<br>
+        <input type="radio" name="paper" value="U-GRADE DD Card">U-GRADE D&amp;D Card<br>
+        </div>
+        <span class="field_name">Radius:</span> <input type="number" min="0" id="radius"><br>
+        <span class="field_name">Height:</span> <input type="number" min="0" id="height"><br>
+        <span class="field_name">Lid Height:</span> <input type="number" min="0" id="lidHeight"><br>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+      <div id="result"></div>
+      <script type="text/javascript" src="calculate.js"></script>
+      <script type="text/javascript">
+
+      </script>
+    </div>
+  </body>
+</html>

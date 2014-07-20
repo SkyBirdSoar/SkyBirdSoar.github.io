@@ -4,7 +4,7 @@ Website
 ** w3schools.com documentation
 ** dropbox.com/developers documentation
 ** developer.mozilla.org
-http://www.w3.org/Style/Examples/007/center.en.html
+** www.w3.org
 http://www.latofonts.com
 http://www.new2html.com/website-creation/20/using-simple-javascript-to-change-text-on-hover
 http://csscreator.com/node/33023
@@ -19,3 +19,11 @@ http://www.vanseodesign.com/css/css-specificity-inheritance-cascaade/
 https://github.com/CodeSeven/toastr *** VERY GOOD ***
 http://jscompress.com
 http://jspretty.com
+http://jsfiddle.net/
+http://www.teacherschoice.com.au/maths_library/angles/angles.htm
+http://www.a4papersize.org/a4-paper-size-in-centimetres.php
+http://scienceprimer.com/drawing-circles-javascript-html5-canvas-element
+http://www.wolframalpha.com
+http://javascript.info/tutorial/number-math
+http://google.com.sg *** AND GOOGLE CALCULATOR ***
+http://www.quackit.com/html/codes/html_borders.cfm
