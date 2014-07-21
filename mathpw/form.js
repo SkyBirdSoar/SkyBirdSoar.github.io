@@ -22,7 +22,7 @@ $(document).ready(function() {
             'U-GRADE DD Card': 0.33
           }
         };
-        $("#material").html('<input type="radio" name="paper" value="U-GRADE Stardream Metalic">U-GRADE Stardream Metalic<br><input type="radio" name="paper" value="U-GRADE DD Card">U-GRADE D&amp;D Card<br>');
+        $("#material").html('<input type="radio" name="paper" value="U-GRADE Stardream Metalic" required>U-GRADE Stardream Metalic<br><input type="radio" name="paper" value="U-GRADE DD Card" required>U-GRADE D&amp;D Card<br>');
         $("input[name=paper]:radio").change(function(e) {}); // clear
         break;
       case 'Bigger':
@@ -35,7 +35,7 @@ $(document).ready(function() {
             'Dali': 0.46
           }
         };
-        $("#material").html('<input type="radio" name="paper" value="Stardream">Stardream<br><input type="radio" name="paper" value="Dali">Dali<br>');
+        $("#material").html('<input type="radio" name="paper" value="Stardream" required>Stardream<br><input type="radio" name="paper" value="Dali" required>Dali<br>');
         $("input[name=paper]:radio").change(function(e) {
           if ($("input[name=paper]:radio").val() == "Stardream") {
             window.PAPER = $.extend(window.PAPER, {
