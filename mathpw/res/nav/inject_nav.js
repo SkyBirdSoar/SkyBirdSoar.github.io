@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $.get('nav.html', function(f) {
+  $.get('/mathpw/res/nav/nav.html', function(f) {
     $('#navWrap').html(f);
   });
 });

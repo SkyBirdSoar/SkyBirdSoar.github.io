@@ -3,7 +3,7 @@
   <head>
     <title>Cost Calculator</title>
     <link rel="stylesheet" type="text/css" href="/res/common/nav.css">
-    <link rel="stylesheet" type="text/css" href="res/cost_calculator/style.css">
+    <link rel="stylesheet" type="text/css" href="/mathpw/res/cost_calculator/style.css">
     <style>
       #nav {
         background-image: url(research/res/images/nav.png);
@@ -11,9 +11,9 @@
     </style>
     <link rel="stylesheet" type="text/css" href='/res/common/font.css'>
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
-    <script type='text/javascript' src='res/nav/inject_nav.js'></script>
+    <script type='text/javascript' src='/mathpw/res/nav/inject_nav.js'></script>
     <script type='text/javascript'>
-      $.get('res/cost_calculator/heart_calculator.html', function(f) {
+      $.get('/mathpw/res/cost_calculator/heart_calculator.html', function(f) {
         window.heart = f;
       });
       
@@ -39,7 +39,7 @@
           $("#dropdown_box").change(function(e) {
             switch($(this).val()) {
               case "heart":
-                $.get('res/cost_calculator/heart_calculator.html', function(f) {
+                $.get('/mathpw/res/cost_calculator/heart_calculator.html', function(f) {
                   $("#content").html(f);
                  });
                 
