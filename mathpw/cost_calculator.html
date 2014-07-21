@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cost Calculator</title>
+    <link rel="stylesheet" type="text/css" href="/res/common/nav.css">
+    <link rel="stylesheet" type="text/css" href="res/cost_calculator/style.css">
+    <style>
+      #nav {
+        background-image: url(research/res/images/nav.png);
+      }
+    </style>
+    <link rel="stylesheet" type="text/css" href='res/common/font.css'>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script type='text/javascript' src='res/nav/inject_nav.js'></script>
+    <script type='text/javascript'>
+      $.get('res/cost_calculator/heart_calculator.html', function(f) {
+        window.heart = f;
+      });
+      
+      /* NOT AVAILABLE YET
+      $.get('res/cost_calculator/box_calculator.html', function(f) {
+        window.box = f;
+      });
+      
+      $.get('res/cost_calculator/diamond_calculator.html', function(f) {
+        window.diamond = f;
+      });
+      */
+    </script>
+  </head>
+  <body>
+    <div id="navWrap"></div>
+    
+    <p id="title">Cost Calculator</p>
+
+    <div>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $("#dropdown_box").change(function(e) {
+            switch(this.val()) {
+              case "heart":
+                $("#content").html(window.heart);
+                break;
+            }    
+          });
+        });
+      </script>
+      <span class="field_name">Select a type of gift box.</span>
+      <select id="dropdown_box">
+        <option>-- Select --</option>
+        <option value="heart">Heart</option>
+        <option value="box">Box</option>
+        <option value="Diamond">Diamond</option>
+      </select>
+      <div id="content"></div>
+    </div>
+  </body>
+</html>
