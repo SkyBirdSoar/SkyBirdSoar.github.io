@@ -9,7 +9,7 @@
         background-image: url(research/res/images/nav.png);
       }
     </style>
-    <link rel="stylesheet" type="text/css" href='res/common/font.css'>
+    <link rel="stylesheet" type="text/css" href='/res/common/font.css'>
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script type='text/javascript' src='res/nav/inject_nav.js'></script>
     <script type='text/javascript'>
@@ -37,15 +37,18 @@
       <script type="text/javascript">
         $(document).ready(function() {
           $("#dropdown_box").change(function(e) {
-            switch(this.val()) {
+            switch($(this).val()) {
               case "heart":
-                $("#content").html(window.heart);
+                $.get('res/cost_calculator/heart_calculator.html', function(f) {
+                  $("#content").html(f);
+                 });
+                
                 break;
             }    
           });
         });
       </script>
-      <span class="field_name">Select a type of gift box.</span>
+      <div class="heading inline">Select a type of gift box</div>
       <select id="dropdown_box">
         <option>-- Select --</option>
         <option value="heart">Heart</option>

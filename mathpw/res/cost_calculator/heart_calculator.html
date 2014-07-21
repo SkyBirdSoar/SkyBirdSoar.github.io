@@ -1,12 +1,14 @@
-<form id="form" action="">
+<script type='text/javascript' src='res/cost_calculator/form.js'></script>
+<form id="form" action="javascript:alert('Uh Oh! Something went wrong!');">
   <span class="field_name">Paper size:</span>
   <select id="paperSize">
   <option value="A4">A4</option>
   <option value="Bigger">Bigger (36 cm by 50.5 ~ 51 cm)</option>
   </select><br>
-  <span class="field_name">Material:</span> <div id="material">
-  <input type="radio" name="paper" value="U-GRADE Stardream Metalic" required>U-GRADE Stardream Metalic<br>
-  <input type="radio" name="paper" value="U-GRADE DD Card" required>U-GRADE D&amp;D Card<br>
+  <span class="field_name">Material:</span>
+  <div id="material">
+    <input type="radio" name="paper" value="U-GRADE Stardream Metalic" required>U-GRADE Stardream Metalic<br>
+    <input type="radio" name="paper" value="U-GRADE DD Card" required>U-GRADE D&amp;D Card<br>
   </div>
   <span class="field_name">Radius:</span> <input type="number" min="0" id="radius" step="any"><br>
   <span class="field_name">Height:</span> <input type="number" min="0" id="height" step="any"><br>
@@ -14,20 +16,21 @@
   <input type="submit" value="Submit" id="submit">
 </form>
 <div id="result"></div>
-<script type="text/javascript" src="heart.js"></script>
+<script type="text/javascript" src="res/cost_calculator/heart.js"></script>
+
 <script type="text/javascript">
   $(document).ready(function() {
     $("#form").submit(function(e) {
       var container = $("#result");
       container.html(""); // clear
-      var data = window.HEARTcalculateCosts($("#material input[name=paper]:checked").val(), +$("#radius").val(), +$("#height").val(), +$("#lidHeight").val());
+      var data = window.HEART.calculateCosts($("#material input[name=paper]:checked").val(), +$("#radius").val(), +$("#height").val(), +$("#lidHeight").val());
       var html = '';
       if (data.hasOwnProperty('error')) {
         html = "<div class='error'>" + data.error_msg + "</div>";
       }
       else {
         $.each(data, function(key, val) {
-          html = html + key + ": " + val.toString() + "<br>";
+          html = html + key.replace(/([A-Z])/g, ' $1').replace(/^./, function(str){ return str.toUpperCase(); }) + ": " + val.toString() + "<br>";
         });
         html = "<div>" + html + "</div>";
       }

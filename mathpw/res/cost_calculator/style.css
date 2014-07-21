@@ -1,8 +1,4 @@
-body {
-  font-family: 'Vollkorn Italic';
-}
-
-form span.field_name {
+.field_name {
   display: inline-block;
   width: 70px;
 }
@@ -39,15 +35,14 @@ form span.field_name {
 }
 
 #title:hover {
-  color: skyblue;
-  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;
+  color: #878787;
+  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px skyblue;
 }
 
 #result {
   font-family: monospace;
   margin: 5px 5px 0 0;
-  padding: 0 10px 0 0;
-  text-align: justify;
+  padding-left: 10px;
   border: 2px dashed #000;
 }
 
@@ -55,4 +50,27 @@ form span.field_name {
   text-decoration: underline;
   color: red;
   background-color: yellow;
+}
+
+.heading {
+  font-family: 'Vollkorn Italic';
+  font-size: 30px;
+  color: black;
+
+  text-decoration: none;
+  text-shadow: none;
+  -webkit-transition: 500ms linear 0s;
+  -moz-transition: 500ms linear 0s;
+  -o-transition: 500ms linear 0s;
+  transition: 500ms linear 0s;
+  outline: 0 none;
+}
+
+.heading:hover {
+  color: #878787;
+  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px skyblue;
+}
+
+.inline {
+  display: inline;
 }
