@@ -46,6 +46,7 @@ form span.field_name {
 #result {
   font-family: monospace;
   margin: 5px 5px 0 0;
+  padding: 0 10px 0 0;
   text-align: justify;
   border: 2px dashed #000;
 }
