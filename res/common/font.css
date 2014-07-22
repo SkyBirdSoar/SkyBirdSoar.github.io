@@ -1,19 +1,8 @@
 @font-face {
-  font-family: "Lato Hairline";
-  src: url(/res/fonts/Lato-Hairline.ttf);
+  font-family: "Gaspar Regular";
+  src: url(/res/fonts/Gaspar_Regular.otf) format('opentype');
 }
 
-@font-face {
-  font-family: "Lato Thin";
-  src: url(/res/fonts/Lato-Thin.ttf);
-}
-
-@font-face {
-  font-family: "Lato Light";
-  src: url(/res/fonts/Lato-Light.ttf);
-}
-
-@font-face {
-  font-family: "Vollkorn Italic";
-  src: url(/res/fonts/Vollkorn-Italic.ttf);
+body {
+  font-family: "Gaspar Regular";
 }
