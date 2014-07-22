@@ -24,10 +24,10 @@
 
 #nav td {
   height: auto;
-  width: 150px;
+  width: 160px;
   text-align: center;
   margin: -3px 0 0 0;
-  font-family: "Lato Light";
+  font-family: "Vollkorn Italic";
 }
 
 #nav td:hover {
@@ -38,7 +38,7 @@
 
 #nav a {
   display: inline-block;
-  width: 150px;
+  width: 160px;
   line-height: 34px;
   text-decoration: none;
 }
