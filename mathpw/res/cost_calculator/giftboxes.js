@@ -10,7 +10,7 @@ function toRadians(degrees) {
   return degrees * (Math.PI / 180);
 }
 
-var Heart = function(radius, height, lidHeight) {
+window.Heart = function(radius, height, lidHeight) {
   this.radius = radius;
   this.height = height;
   this.lidHeight = lidHeight;
@@ -58,7 +58,7 @@ var Heart = function(radius, height, lidHeight) {
   this.calculateProperties();
 };
 
-var Box = function(length, breadth, height, lidHeight) {
+windowBox = function(length, breadth, height, lidHeight) {
   this.length = length;
   this.breadth = breadth;
   this.height = height;

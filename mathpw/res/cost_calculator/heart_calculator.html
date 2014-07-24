@@ -17,14 +17,13 @@
 </form>
 <div id="result"></div>
 
-<script type="text/javascript" src="/mathpw/res/cost_calculator/heart.js"></script>
-
 <script type="text/javascript">
   $(document).ready(function() {
     $("#form").submit(function(e) {
       var container = $("#result");
       container.html(""); // clear
-      var data = window.HEART.calculateCosts($("#material input[name=paper]:checked").val(), +$("#radius").val(), +$("#height").val(), +$("#lidHeight").val());
+      var heart = new window.Heart(+$("#radius").val(), +$("#height").val(), +$("#lidHeight").val());
+      var data = heart.calculateProperties(); // window.HEART.calculateCosts($("#material input[name=paper]:checked").val(), +$("#radius").val(), +$("#height").val(), +$("#lidHeight").val());
       var html = '';
       if (data.hasOwnProperty('error')) {
         html = "<div class='error'>" + data.error_msg + "</div>";
