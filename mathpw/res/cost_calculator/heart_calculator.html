@@ -30,6 +30,9 @@
       }
       else {
         $.each(data, function(key, val) {
+          if (!isNaN(val)) {
+            val = val.toFixed(2) + " cm";
+          }
           html = html + key.replace(/([A-Z])/g, ' $1').replace(/^./, function(str){ return str.toUpperCase(); }) + ": " + val.toString() + "<br>";
         });
         html = "<div>" + html + "</div>";
