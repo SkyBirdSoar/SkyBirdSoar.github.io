@@ -11,7 +11,7 @@ http://csscreator.com/node/33023
 http://micronations.wikia.com/wiki/File:Laurel_wreath.gif
 https://www.dropbox.com/developers/datastore/tutorial/js
 http://www.sitepoint.com/css3-glowing-link-effect/  *** VERY GOOD ***
-http://css-tricks.com/frosting-glass-css-filters/
+** css-tricks.com
 http://jslint.com
 http://jshint.com
 http://css.maxdesign.com.au/selectutorial/selectors_class.htm
@@ -27,3 +27,5 @@ http://www.wolframalpha.com
 http://javascript.info/tutorial/number-math
 http://google.com.sg *** AND GOOGLE CALCULATOR ***
 http://www.quackit.com/html/codes/html_borders.cfm
+http://www.jenningswire.com/lifestyle/holiday-season-no-nos-limits-and-gifts-for-introverts-and-extroverts-to-mix/
+image-1: http://www.bellaglory.com/category/giveaways/ & http://delsonjewelry.com/site/images/stories/virtuemart/product/three-stones-engagement-ring.jpg
