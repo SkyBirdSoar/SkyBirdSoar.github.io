@@ -3,7 +3,7 @@
   <head>
     <title>Cost Calculator</title>
     <link rel="stylesheet" type="text/css" href="/res/common/nav.css">
-    <link rel="stylesheet" type="text/css" href="/mathpw/res/cost_calculator/style.css">
+    <link rel="stylesheet" type="text/css" href="/mathpw/res/giftboxes/style.css">
     <style>
       #nav {
         background-image: url(research/res/images/nav.png);
@@ -13,21 +13,21 @@
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script type='text/javascript' src='/mathpw/res/nav/inject_nav.js'></script>
     <script type='text/javascript'>
-      $.get('/mathpw/res/cost_calculator/heart_calculator.html', function(f) {
+      $.get('/mathpw/res/giftboxes/heart_calculator.html', function(f) {
         window.heart = f;
       });
       
       /* NOT AVAILABLE YET
-      $.get('res/cost_calculator/box_calculator.html', function(f) {
+      $.get('/mathpw/res/giftboxes/box_calculator.html', function(f) {
         window.box = f;
       });
       
-      $.get('res/cost_calculator/diamond_calculator.html', function(f) {
+      $.get('/mathpw/res/giftboxes/diamond_calculator.html', function(f) {
         window.diamond = f;
       });
       */
     </script>
-    <script type='text/javascript' src='/mathpw/res/cost_calculator/giftboxes.js'></script>
+    <script type='text/javascript' src='/mathpw/res/giftboxes/giftboxes.js'></script>
   </head>
   <body>
     <div id="navWrap"></div>
@@ -40,7 +40,7 @@
           $("#dropdown_box").change(function(e) {
             switch($(this).val()) {
               case "heart":
-                $.get('/mathpw/res/cost_calculator/heart_calculator.html', function(f) {
+                $.get('/mathpw/res/giftboxes/heart_calculator.html', function(f) {
                   $("#content").html(f);
                  });
                 
