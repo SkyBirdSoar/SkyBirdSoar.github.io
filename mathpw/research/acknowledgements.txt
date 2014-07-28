@@ -1,31 +1,61 @@
-Website
+Highly Helpful
 ** stackoverflow.com Q&As
-** jquery.com documentation
+** api.jquery.com documentation
 ** w3schools.com documentation
 ** dropbox.com/developers documentation
-** developer.mozilla.org
-** www.w3.org
-http://www.latofonts.com
-http://www.new2html.com/website-creation/20/using-simple-javascript-to-change-text-on-hover
-http://csscreator.com/node/33023
-http://micronations.wikia.com/wiki/File:Laurel_wreath.gif
-https://www.dropbox.com/developers/datastore/tutorial/js
-http://www.sitepoint.com/css3-glowing-link-effect/  *** VERY GOOD ***
-** css-tricks.com
+** developer.mozilla.org documentation
+** www.w3.org documentation
+
+Javascript linting
 http://jslint.com
 http://jshint.com
+
+Design Tips
+http://www.new2html.com/website-creation/20/using-simple-javascript-to-change-text-on-hover
+http://csscreator.com/node/33023
+http://www.sitepoint.com/css3-glowing-link-effect/  *** nice ***
 http://css.maxdesign.com.au/selectutorial/selectors_class.htm
 http://www.vanseodesign.com/css/css-specificity-inheritance-cascaade/
-https://github.com/CodeSeven/toastr *** VERY GOOD ***
-http://jscompress.com
-http://jspretty.com
-http://jsfiddle.net/
-http://www.teacherschoice.com.au/maths_library/angles/angles.htm
-http://www.a4papersize.org/a4-paper-size-in-centimetres.php
 http://scienceprimer.com/drawing-circles-javascript-html5-canvas-element
-http://www.wolframalpha.com
+http://www.quackit.com/html/codes/html_borders.cfm
+** css-tricks.com
+
+Helpful
+http://www.a4papersize.org/a4-paper-size-in-centimetres.php general info
+http://www.teacherschoice.com.au/maths_library/angles/angles.htm degrees -> radians
+http://www.wolframalpha.com calculation
 http://javascript.info/tutorial/number-math
 http://google.com.sg *** AND GOOGLE CALCULATOR ***
-http://www.quackit.com/html/codes/html_borders.cfm
-http://www.jenningswire.com/lifestyle/holiday-season-no-nos-limits-and-gifts-for-introverts-and-extroverts-to-mix/
-image-1: http://www.bellaglory.com/category/giveaways/ & http://delsonjewelry.com/site/images/stories/virtuemart/product/three-stones-engagement-ring.jpg
+https://gist.github.com/dperini/729294 url validation regex
+
+Javascript utilities
+http://jscompress.com compress scripts
+http://jspretty.com uncompress scripts
+http://jsfiddle.net/ javascript repl
+
+Images
+background: http://www.jenningswire.com/wp-content/uploads/2012/12/bigstock-Pile-of-colorful-christmas-pre-18485696.jpg
+image-1: http://www.bellaglory.com/wp-content/uploads/2013/06/Open-Pink-Gifft-Box-with-Pink-Ribbon-5.jpg & http://delsonjewelry.com/site/images/stories/virtuemart/product/three-stones-engagement-ring.jpg
+image-2: http://fc04.deviantart.net/fs71/f/2011/278/3/1/question_makrs_cutie_mark_by_rildraw-d4byewl.png
+http://micronations.wikia.com/wiki/File:Laurel_wreath.gif
+image-3: http://www.worldtradewt100.com/ext/resources/July_2011/WT0711-042Survey-FeaturePhoto.jpg?1311169783
+image-4: http://thumbs.dreamstime.com/x/open-gift-box-3589553.jpg
+
+External Libraries
+http://jquery.com
+https://github.com/CodeSeven/toastr Notifications *** VERY GOOD ***
+
+Tools used
+https://www.google.com/intl/en_sg/chrome/browser Chrome
+http://www.adobe.com/sea/products/photoshop.html Adobe Photoshop CC
+http://brackets.io Brackets (Adobe Edge)
+http://c9.io Cloud9
+http://codenvy.com CodeEnvy
+http://codebox.io CodeBox
+http://sourcelair.com SourceLair
+PureSolid IDE (Chrome Webstore)
+Zed Code Editor (Chrome Webstore)
+http://koding.com Koding
+https://www.dropbox.com Dropbox
+https://windows.github.com Github For Windows
+https://github.com GitHub
