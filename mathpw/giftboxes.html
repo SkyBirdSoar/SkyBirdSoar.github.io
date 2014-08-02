@@ -13,15 +13,16 @@
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script type='text/javascript' src='/mathpw/res/nav/inject_nav.js'></script>
     <script type='text/javascript'>
-      $.get('/mathpw/res/giftboxes/heart_calculator.html', function(f) {
+      $.get('/mathpw/res/giftboxes/heart.html', function(f) {
         window.heart = f;
       });
       
-      /* NOT AVAILABLE YET
-      $.get('/mathpw/res/giftboxes/box_calculator.html', function(f) {
+      
+      $.get('/mathpw/res/giftboxes/box.html', function(f) {
         window.box = f;
       });
       
+      /* NOT AVAILABLE YET
       $.get('/mathpw/res/giftboxes/diamond_calculator.html', function(f) {
         window.diamond = f;
       });
@@ -40,10 +41,10 @@
           $("#dropdown_box").change(function(e) {
             switch($(this).val()) {
               case "heart":
-                $.get('/mathpw/res/giftboxes/heart_calculator.html', function(f) {
-                  $("#content").html(f);
-                 });
-                
+                $("#content").html(window.heart);
+                break;
+              case "box":
+                $("#content").html(window.box);
                 break;
             }    
           });
@@ -53,9 +54,9 @@
         <span>Select a type of gift box</span>
         <select id="dropdown_box">
           <option>-- Select --</option>
-          <option value="heart">Heart</option>
           <option value="box">Box</option>
           <option value="Diamond">Diamond</option>
+          <option value="heart">Heart</option>
         </select>
       </div>
       <div id="content"></div>

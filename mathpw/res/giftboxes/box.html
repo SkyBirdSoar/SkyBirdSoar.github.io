@@ -1,5 +1,8 @@
 <script type='text/javascript' src='/mathpw/res/giftboxes/form.js'></script>
 <form id="form" action="javascript:alert('Uh Oh! Something went wrong!');">
+  <div style="float:right">
+    <div id="price"></div>
+  </div>
   <span class="field_name">Paper size:</span>
   <select id="paperSize">
   <option value="A4">A4</option>
@@ -10,7 +13,8 @@
     <input type="radio" name="paper" value="U-GRADE Stardream Metalic" required>U-GRADE Stardream Metalic<br>
     <input type="radio" name="paper" value="U-GRADE DD Card" required>U-GRADE D&amp;D Card<br>
   </div>
-  <span class="field_name">Radius:</span> <input type="number" min="0" id="radius" step="any"><br>
+  <span class="field_name">Length:</span> <input type="number" min="0" id="length" step="any"><br>
+  <span class="field_name">Breadth:</span> <input type="number" min="0" id="breadth" step="any"><br>
   <span class="field_name">Height:</span> <input type="number" min="0" id="height" step="any"><br>
   <span class="field_name">Lid Height:</span> <input type="number" min="0" id="lidHeight" step="any"><br>
   <input type="submit" value="Submit" id="submit">
@@ -19,26 +23,42 @@
 
 <script type="text/javascript">
   $(document).ready(function() {
+    var calculateCost = function(data) {
+      var costPrice = data.materialCost;
+      var adminFee = 0.6 * costPrice;
+      adminFee = (adminFee > 1) ? 1 : adminFee;
+      var valueOfBox = 1/100 * data.volumeOfBox;
+      var profitFee = (2 * costPrice) + valueOfBox;
+      var labourFee = 0.3 * (costPrice + profitFee);
+      var price = costPrice + adminFee + profitFee + labourFee;
+      return price * 107/100;
+    };
+
     $("#form").submit(function(e) {
       var container = $("#result");
       container.html(""); // clear
-      var heart = new window.Heart(+$("#radius").val(), +$("#height").val(), +$("#lidHeight").val());
-      var data = heart.calculateProperties(); // window.HEART.calculateCosts($("#material input[name=paper]:checked").val(), +$("#radius").val(), +$("#height").val(), +$("#lidHeight").val());
+      $("#price").html("");
+      var price;
+      var box = new window.Box(+$("#length").val(), +$("#breadth").val(), +$("#height").val(), +$("#lidHeight").val());
+      var data = $.extend(box.calculateBaseCost($("#material input[name=paper]:checked").val()), box.calculateProperties());
       var html = '';
       if (data.hasOwnProperty('error')) {
         html = "<div class='error'>" + data.error_msg + "</div>";
       }
       else {
+        price = calculateCost(data);
         $.each(data, function(key, val) {
-          if (!isNaN(val)) {
+          if (!isNaN(val) && key != "paperRequired") {
             val = val.toFixed(2) + " cm";
           }
+          key = key.charAt(0).toUpperCase() + key.slice(1);
           html = html + key.replace(/([A-Z])/g, ' $1') + ": " + val.toString() + "<br>";
         });
         html = "<div>" + html + "</div>";
       }
   
-      $("#result").html(html);
+      container.html(html);
+      $("#price").html("$" + price.toFixed(2));
       e.preventDefault();
     });
   });

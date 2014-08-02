@@ -82,3 +82,9 @@
   text-align: center;
   margin: 0 auto 0 auto;
 }
+
+#price {
+  font-size: 5em;
+  margin: 0 0 0 0;
+  text-align: center;
+}
