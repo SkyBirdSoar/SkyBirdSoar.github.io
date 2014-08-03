@@ -67,8 +67,8 @@ window.Heart = function(radius, height, lidHeight) {
     }
     var rY = window.PAPER.y; // r stands for remaining
     var rX = window.PAPER.x;
-    var lateralArea = {length: properties.perimeterOfHeartBase / 2, breadth: height}; // half only!
-    var lidLateralArea = {length: properties.perimeterOfLid / 2, breadth: lidHeight};
+    var lateralArea = {length: (properties.perimeterOfHeartBase / 2) + 1, breadth: height + 1}; // half only!
+    var lidLateralArea = {length: (properties.perimeterOfLid / 2) + 1, breadth: lidHeight + 1};
   
     var id = ['heart', 'latA', 'latB', 'heartLid', 'lidLatA', 'lidLatB'];
     if ((window.PAPER.y >= lidLateralArea.length) && (window.PAPER.x >= lidLateralArea.breadth)) { // vertical alignment (x dominant) |||
