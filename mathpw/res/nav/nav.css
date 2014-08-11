@@ -3,17 +3,17 @@
   width: 30%;
 }
 
-.fade {
-  -webkit-transition: all 0.2s ease-in-out;
-     -moz-transition: all 0.2s ease-in-out;
-       -o-transition: all 0.2s ease-in-out;
-      -ms-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
-}
-
 #nav {
   width :102%;
   background: #e6e6e6;
   position: absolute;
   bottom: 0;
+}
+
+#nav td:hover {
+  -webkit-transition: background 0.5s ease-in-out;
+     -moz-transition: background 0.5s ease-in-out;
+       -o-transition: background 0.5s ease-in-out;
+      -ms-transition: background 0.5s ease-in-out;
+          transition: background 0.5s ease-in-out;
 }
