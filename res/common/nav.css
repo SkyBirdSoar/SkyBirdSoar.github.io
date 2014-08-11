@@ -36,6 +36,10 @@ body {
   color: #faa;  
 }
 
+.highlight {
+  background-color: #d1f0f8;
+}
+
 #nav a {
   display: inline-block;
   width: 160px;
