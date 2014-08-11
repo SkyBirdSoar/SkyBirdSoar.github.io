@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Gift Boxes</title>
+    <title>Gift Boxes :: Buy</title>
     <link rel="stylesheet" type="text/css" href="/res/common/nav.css">
+    <link rel="stylesheet" type="text/css" href="/res/common/helper.css">
     <link rel="stylesheet" type="text/css" href="/mathpw/res/giftboxes/style.css">
-    <style>
-      #nav {
-        background-image: url(research/res/images/nav.png);
-      }
-    </style>
     <link rel="stylesheet" type="text/css" href='/res/common/font.css'>
     <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script type='text/javascript' src='/mathpw/res/nav/inject_nav.js'></script>
@@ -16,7 +12,6 @@
       $.get('/mathpw/res/giftboxes/heart.html', function(f) {
         window.heart = f;
       });
-      
       
       $.get('/mathpw/res/giftboxes/box.html', function(f) {
         window.box = f;
@@ -32,10 +27,7 @@
   </head>
   <body>
     <div id="navWrap"></div>
-    
-    <p class="h1 middle">Gift Boxes</p>
-
-    <div>
+    <div id="page">
       <script type="text/javascript">
         $(document).ready(function() {
           $("#dropdown_box").change(function(e) {
@@ -51,7 +43,7 @@
         });
       </script>
       <div class="middle">
-        <span>Select a type of gift box</span>
+        <p class="h1">Select a type of gift box</span>
         <select id="dropdown_box">
           <option>-- Select --</option>
           <option value="box">Box</option>

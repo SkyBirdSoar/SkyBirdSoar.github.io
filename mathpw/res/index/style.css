@@ -1,47 +1,3 @@
-html, body {
-  height: 100%;
-}
-
-.h1 {
-  font-size: 50px;
-  margin: 0 0 0 0;
-
-  text-decoration: none;
-  text-shadow: none;
-  -webkit-transition: 250ms linear 0s;
-  -moz-transition: 250ms linear 0s;
-  -o-transition: 250ms linear 0s;
-  transition: 250ms linear 0s;
-  outline: 0 none;
-}
-
-.h1:hover {
-  color: skyblue;
-  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px skyblue;
-}
-
-.heading {
-  font-size: 30px;
-
-  text-decoration: none;
-  text-shadow: none;
-  -webkit-transition: 250ms linear 0s;
-  -moz-transition: 250ms linear 0s;
-  -o-transition: 250ms linear 0s;
-  transition: 250ms linear 0s;
-  outline: 0 none;
-}
-
-.heading:hover {
-  color: pink;
-  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px skyblue;
-}
-
-.shade {
-  background-color: rgba(0,0,0,0.6);
-  height: inherit;
-}
-
 .section {
   height: 100%;
   margin-left: -8px;
@@ -64,30 +20,11 @@ html, body {
   text-align: center;
 }
 
-.centralise {
-  position: relative;
-  top: 50%; 
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-}
-
 .bar {
   width: 20%;
   background: darkblue;
   color: white;
   height: 100%;
-}
-
-.left {
-  text-align: left;
-  margin-left: -8px;
-  margin-right: auto;
-}
-
-.right {
-  text-align: right;
-  margin-left: auto;
-  margin-right: 0px;
 }
 
 #b {

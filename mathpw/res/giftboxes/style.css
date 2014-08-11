@@ -1,6 +1,17 @@
+#page {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
 @font-face {
   font-family: "Gaspar Bold";
   src: url(/res/fonts/Gaspar_Bold.otf) format('opentype');
+}
+
+#dropdown_box {
+  width: 100%;
+  text-align: center;
 }
 
 .field_name {
@@ -16,31 +27,8 @@
   padding-left: 5px;
 }
 
-#form select {
+#form select, input[type=number] {
   width: 210px;
-}
-
-#form input[type=number] {
-  width: 210px;
-}
-
-.h1 {
-  font-size: 50px;
-  color: black;
-  margin: 0 0 0 0;
-
-  text-decoration: none;
-  text-shadow: none;
-  -webkit-transition: 500ms linear 0s;
-  -moz-transition: 500ms linear 0s;
-  -o-transition: 500ms linear 0s;
-  transition: 500ms linear 0s;
-  outline: 0 none;
-}
-
-.h1:hover {
-  color: #878787;
-  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px skyblue;
 }
 
 #result {
@@ -54,24 +42,6 @@
   text-decoration: underline;
   color: red;
   background-color: yellow;
-}
-
-.heading {
-  font-size: 30px;
-  color: black;
-
-  text-decoration: none;
-  text-shadow: none;
-  -webkit-transition: 500ms linear 0s;
-  -moz-transition: 500ms linear 0s;
-  -o-transition: 500ms linear 0s;
-  transition: 500ms linear 0s;
-  outline: 0 none;
-}
-
-.heading:hover {
-  color: #878787;
-  text-shadow: -1px 1px 8px #ffc, 1px -1px 8px skyblue;
 }
 
 .inline {

@@ -34,7 +34,7 @@ http://jspretty.com uncompress scripts
 http://jsfiddle.net/ javascript repl
 
 Images
-background: http://www.jenningswire.com/wp-content/uploads/2012/12/bigstock-Pile-of-colorful-christmas-pre-18485696.jpg
+logo & background: http://www.jenningswire.com/wp-content/uploads/2012/12/bigstock-Pile-of-colorful-christmas-pre-18485696.jpg
 image-1: http://www.bellaglory.com/wp-content/uploads/2013/06/Open-Pink-Gifft-Box-with-Pink-Ribbon-5.jpg & http://delsonjewelry.com/site/images/stories/virtuemart/product/three-stones-engagement-ring.jpg
 image-2: http://fc04.deviantart.net/fs71/f/2011/278/3/1/question_makrs_cutie_mark_by_rildraw-d4byewl.png
 http://micronations.wikia.com/wiki/File:Laurel_wreath.gif
