@@ -1,8 +1,8 @@
 <div class="centralise-vertically" style="text-align:center;">
-  <img src="/mathpw/res/images/logo.png" alt="logo" style="height:30%;width:30%;" />
+  <img src="/mathpw/res/images/logo.png" alt="logo" id="logo" />
   <p class="h1">Gift Boxes</p>
 </div>
-<div id="nav" style="width:102%;background:#e6e6e6;position:absolute;bottom:0;">
+<div id="nav">
   <table>
     <tr>
       <td><a href="/mathpw/">Home</a></td>
@@ -15,4 +15,18 @@
 <script type="text/javascript">
   var s = "#nav td:nth-child(" + window.NAV_INDEX + ")";
   $(s).addClass('highlight');
+  $("#logo").mouseover(function(e) {
+    var ele = $(this);
+    ele.animate({
+      width: "32%",
+      height: "32%",
+      opacity: "0.5"
+    }, 600, "", function() {
+      ele.animate({
+        width: "30%",
+        height: "30%",
+        opacity: "1"
+      });
+    });
+  });
 </script>
