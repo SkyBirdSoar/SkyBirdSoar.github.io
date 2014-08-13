@@ -27,6 +27,8 @@ http://www.wolframalpha.com calculation
 http://javascript.info/tutorial/number-math
 http://google.com.sg *** AND GOOGLE CALCULATOR ***
 https://gist.github.com/dperini/729294 url validation regex
+http://www.javascriptkit.com/javatutors/determinevar2.shtml
+https://developer.chrome.com/devtools/docs/console
 
 Javascript utilities
 http://jscompress.com compress scripts
