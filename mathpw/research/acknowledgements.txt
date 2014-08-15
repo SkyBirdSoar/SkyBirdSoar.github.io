@@ -1,3 +1,24 @@
+And now... For the acknowledgments...
+Dali http://www.gruppocordenons.com/en/products/graphic-paper/felt-marked/dali/
+Paperlinx http://www.paperlinx.com.sg/index.php/products/product_details/stardream/
+Cuboid http://exchangedownloads.smarttech.com/public/content/5c/5cc70c97-da3f-4f5f-b8ea-003bae6e43ac/previews/medium/0001.png
+Parallelogram http://www.numberempire.com/shapes/images/parallelogram_main.png
+UGRADE http://www.ugrade.com.sg/
+
+Tools used
+Prezi
+Google Spreadsheets
+Video Converter http://convert-video-online.com/
+Screen Recorder (ScreenCastify) Chrome extension
+WPS Office
+Dropbox
+Tinyurl
+Daum Equation Editor http://s1.daumcdn.net/editor/fp/service_nc/pencil/Pencil_chromestore.html
+SurveyMonkey
+
+Website
+<div style="margin: -30px 0 0 30px">
+
 Highly Helpful
 ** stackoverflow.com Q&As
 ** api.jquery.com documentation
@@ -61,3 +82,4 @@ http://koding.com Koding
 https://www.dropbox.com Dropbox
 https://windows.github.com Github For Windows
 https://github.com GitHub
+</p>
