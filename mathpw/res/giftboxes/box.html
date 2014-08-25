@@ -1,8 +1,5 @@
 <script type='text/javascript' src='/mathpw/res/giftboxes/form.js'></script>
 <form id="form" action="javascript:alert('Uh Oh! Something went wrong!');">
-  <div style="float:right">
-    <div id="price"></div>
-  </div>
   <span class="field_name">Paper size:</span>
   <select id="paperSize">
   <option value="A4">A4</option>
@@ -31,7 +28,7 @@
       var profitFee = (2 * costPrice) + valueOfBox;
       var labourFee = 0.3 * (costPrice + profitFee);
       var price = costPrice + adminFee + profitFee + labourFee;
-      return price * 107/100;
+      return price * (107/100);
     };
 
     $("#form").submit(function(e) {
@@ -46,19 +43,10 @@
         html = "<div class='error'>" + data.error_msg + "</div>";
       }
       else {
-        price = calculateCost(data);
-        $.each(data, function(key, val) {
-          if (!isNaN(val) && key != "paperRequired") {
-            val = val.toFixed(2) + " cm";
-          }
-          key = key.charAt(0).toUpperCase() + key.slice(1);
-          html = html + key.replace(/([A-Z])/g, ' $1') + ": " + val.toString() + "<br>";
-        });
-        html = "<div>" + html + "</div>";
+        html = "$" + calculateCost(data).toFixed(2);
       }
   
       container.html(html);
-      $("#price").html("$" + price.toFixed(2));
       e.preventDefault();
     });
   });
