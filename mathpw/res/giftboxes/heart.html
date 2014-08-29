@@ -32,11 +32,11 @@
     
     var round = function(price) {
       if (+price.charAt(price.length - 1) < 5) {
-        price.replace(/.$/, "0");
+        price = price.replace(/.$/, "0");
       }
       else if (+price.charAt(price.length - 1) > 5) {
         var a = +price.charAt(price.length - 2) + 1;
-        price.replace(/..$/, "" + a + "0");
+        price = price.replace(/..$/, "" + a + "0");
       }
       return price;
     }
