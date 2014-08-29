@@ -24,12 +24,23 @@
       var costPrice = data.materialCost;
       var adminFee = 0.6 * costPrice;
       adminFee = (adminFee > 1) ? 1 : adminFee;
-      var valueOfBox = 1/100 * data.volumeOfBox;
-      var profitFee = (2 * costPrice) + valueOfBox;
+      var valueOfBox = 0.1/100 * data.volumeOfBox;
+      var profitFee = valueOfBox;
       var labourFee = 0.3 * (costPrice + profitFee);
       var price = costPrice + adminFee + profitFee + labourFee;
       return price * (107/100);
     };
+      
+    var round = function(price) {
+      if (+price.charAt(price.length - 1) < 5) {
+        price.replace(/.$/, "0");
+      }
+      else if (+price.charAt(price.length - 1) > 5) {
+        var a = +price.charAt(price.length - 2) + 1;
+        price.replace(/..$/, "" + a + "0");
+      }
+      return price;
+    }
 
     $("#form").submit(function(e) {
       var container = $("#result");
@@ -43,7 +54,7 @@
         html = "<div class='error'>" + data.error_msg + "</div>";
       }
       else {
-        html = "$" + calculateCost(data).toFixed(2);
+        html = round("$" + calculateCost(data).toFixed(2));
       }
   
       container.html(html);
