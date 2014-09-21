@@ -38,10 +38,10 @@
                 $("#content").html(window.heart);
                 break;
               case "box":
-                $("#content").html(window.box);
+                $("#content").html("<p style='font-size:3em;color:red'>Sorry! Not available yet.</p>"); // window.box);
                 break;
               case "kite":
-                $("#content").html("<p style='font-size:3em;color:red'>Sorry!<br>Not available yet</p>");
+                $("#content").html("<p style='font-size:3em;color:red'>Sorry! Not available yet.</p>");
                 break;
             }    
           });
@@ -51,8 +51,8 @@
         <p class="h1">Select a type of gift box</p>
         <select id="dropdown_box">
           <option>-- Select --</option>
-          <option value="box"><span style="text-decoration:line-through">Box</span></option>
-          <option value="kite"><span style="text-decoration:line-through">Kite</span></option>
+          <option value="box">Box</option>
+          <option value="kite">Kite</option>
           <option value="heart">Heart</option>
         </select>
       </div>
