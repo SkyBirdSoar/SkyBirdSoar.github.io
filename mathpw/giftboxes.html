@@ -40,6 +40,9 @@
               case "box":
                 $("#content").html(window.box);
                 break;
+              case "kite":
+                $("#content").html("<p style='font-size:3em;color:red'>Sorry!<br>Not available yet</p>");
+                break;
             }    
           });
         });
@@ -49,7 +52,7 @@
         <select id="dropdown_box">
           <option>-- Select --</option>
           <option value="box">Box</option>
-          <option value="Diamond">Kite</option>
+          <option value="kite">Kite</option>
           <option value="heart">Heart</option>
         </select>
       </div>

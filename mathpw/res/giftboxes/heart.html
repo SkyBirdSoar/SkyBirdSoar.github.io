@@ -54,7 +54,7 @@
         html = "<div class='error'>" + data.error_msg + "</div>";
       }
       else {
-        html = "$" + calculateCost(data).toFixed(2) +"<br>"+data.paperRequired;
+        html = "$" + calculateCost(data).toFixed(2);
       }
   
       container.html(html);
