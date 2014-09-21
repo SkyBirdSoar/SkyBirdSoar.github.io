@@ -27,6 +27,7 @@
       var profitFee = valueOfBox;
       var labourFee = 0.3 * (costPrice + profitFee);
       var price = costPrice + adminFee + profitFee + labourFee;
+      console.log(costPrice, adminFee, valueOfBox, labourFee, price);
       return price * (107/100);
     };
     
@@ -53,7 +54,7 @@
         html = "<div class='error'>" + data.error_msg + "</div>";
       }
       else {
-        html = round("$" + calculateCost(data).toFixed(2));
+        html = "$" + calculateCost(data).toFixed(2) +"<br>"+data.paperRequired;
       }
   
       container.html(html);
